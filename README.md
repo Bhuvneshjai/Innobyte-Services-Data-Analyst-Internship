@@ -7,3 +7,25 @@
 * static: Directory for storing static files such as images and CSS.
 * templates: HTML templates for the dashboard views.
 * venv: Virtual environment for Python dependencies.
+## Installation
+1. Clone the repository:
+     - git clone https://github.com/Bhuvneshjai/Innobyte-Services-Data-Analyst-Internship.git
+2. Navigate to the project directory:
+     - cd Innobyte-Services-Data-Analyst-Internship
+3. Set up a virtual environment:
+     - python -m venv venv
+4. Activate the virtual environment:
+     - On Windows:
+         - venv\Scripts\activate
+     - On macOS/Linux:
+         - source venv/bin/activate
+5. Install dependencies:
+     - pip install -r requirements.txt
+## Usage
+1. Navigate to the sales_analysis directory:
+    - cd sales_analysis
+2. Run the Django development server:
+    - python manage.py runserver
+3. Access the data analysis dashboard in your web browser at http://localhost:8000/.
+
+
