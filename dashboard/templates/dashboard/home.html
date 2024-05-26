@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Analysis Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Analysis Dashboard</h1>
+    <!-- Load the static files template tag library -->
+    {% load static %}
+    <div class="container">
+        <div class="section">
+            <h2>Customer Segments</h2>
+            <img src="{% static 'visualizations/plot1.png' %}" alt="Customer Segments">
+        </div>
+        <div class="section">
+            <h2>Popular Products</h2>
+            <img src="{% static 'visualizations/plot2.png' %}" alt="Popular Products">
+        </div>
+        <!-- Add more sections as needed -->
+    </div>
+</body>
+</html>
